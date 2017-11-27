@@ -1,0 +1,58 @@
+/* CSS Document */
+.welive_div ul li{text-align:left;padding:0 0 5px 20px; line-height:1.8; background:url(images/li.gif) no-repeat 5px 8px;}
+
+.note{ border-bottom:1px dashed #F66;color:#D14A10;}
+.note2{ border-bottom:1px dashed #F66;}
+
+#header .spec {color:#11F7EB;}
+#header a {font-weight:700;text-decoration:none;}
+#header a:hover {font-weight:700;}
+
+#memu {float:left;display:inline;padding:7px 18px 0 30px;color:#B9B9B9;}
+#memu a {color:#11F7EB;padding:4px 10px;*padding:6px 10px 4px 10px;}
+#memu a:hover {color:#E06907;}
+#memu .on {color:#E06907;background:#D4D4D4;}
+
+#header .loginout {float:right;display:inline;padding:6px 58px 0 20px;color:#C0BEBE;}
+#header .loginout a {color:#FF3300;}
+#header .loginout a:hover {color:#FF6600;}
+
+table.normal td {color:#666;border-bottom:1px solid #ccc;padding: 12px 8px;text-align:left;}
+
+table.maintable th, table.moreinfo th {background:#EAF8FB;font-size:14px;font-weight:normal;color:#1D485E;padding:4px 8px;border-bottom:2px solid #A09C9C;text-align:left;}
+table.maintable td {color:#666;border-bottom:1px solid #ccc;padding:12px 8px;text-align:left;}
+table.maintable .last, table.moreinfo .last {border:0;background:none;}
+
+table.moreinfo td {color:#666;border-bottom:1px solid #ccc;padding:6px 8px;text-align:left;}
+
+/* msg */
+#sysinfo_error { width:400px; margin:0 auto; padding-top:12px;padding-bottom:12px;color:#000;line-height:18px;}
+#sysinfo_success { width:400px; margin:0 auto; padding-top:12px;padding-bottom:12px;color:#000;line-height:18px;}
+.e_lborder {background:#FFE1E1 url(images/msg/e_border.gif) repeat-y left bottom;}
+.e_rborder {background:transparent url(images/msg/e_border.gif) repeat-y right top;}
+.e_tborder {background:transparent url(images/msg/e_border.gif) repeat-x;}
+.e_bborder {background:transparent url(images/msg/e_border.gif) repeat-x center bottom;}
+.e_tlcorner {background:transparent url(images/msg/e_tlcorner.gif) no-repeat;}
+.e_trcorner {background:transparent url(images/msg/e_trcorner.gif) no-repeat right top;padding:12px 20px;overflow:auto;}
+.e_blcorner {background:transparent url(images/msg/e_blcorner.gif) no-repeat left bottom;}
+.e_brcorner {background:transparent url(images/msg/e_brcorner.gif) no-repeat right bottom;}
+
+.s_lborder {background:#DEFBC6 url(images/msg/s_border.gif) repeat-y left bottom;}
+.s_rborder {background:transparent url(images/msg/s_border.gif) repeat-y right top;}
+.s_tborder {background:transparent url(images/msg/s_border.gif) repeat-x;}
+.s_bborder {background:transparent url(images/msg/s_border.gif) repeat-x center bottom;}
+.s_tlcorner {background:transparent url(images/msg/s_tlcorner.gif) no-repeat;}
+.s_trcorner {background:transparent url(images/msg/s_trcorner.gif) no-repeat right top;padding:12px 20px;overflow:auto;}
+.s_blcorner {background:transparent url(images/msg/s_blcorner.gif) no-repeat left bottom;}
+.s_brcorner {background:transparent url(images/msg/s_brcorner.gif) no-repeat right bottom;}
+
+/* pages */
+.PageListDiv {text-align:center;font-family: 'Trebuchet MS', Verdana, Tahoma, Arial, sans-serif;	font-size:14px;line-height:30px;font-weight:bold;}
+.PageList {margin:0;padding:0;	list-style:none;}
+.PageList li {display:inline;}
+.PageList a, .PageList li a {font-family: 'Trebuchet MS', Verdana, Tahoma, Arial, sans-serif !important;font-size:14px !important;background: #C5E0AB;padding: 2px 7px 2px 7px;text-decoration:none !important;color:#3354aa !important;}
+.PageList span.CurrentPage{background: #E8F3DE;padding: 2px 7px 2px 7px;border: 1px solid #996600;color:#ACA8AA;}
+.PageList li a.PagePrev{background:#fff url(images/page_nav.jpg) top left no-repeat !important;}
+.PageList li a.PageNext{background:#fff url(images/page_nav.jpg) top right no-repeat !important;}
+.PageList li span.NoPagePrev{background:#fff url(images/page_nav.jpg) top left no-repeat;padding: 2px 7px 2px 7px;color:#ACA8AA;}
+.PageList li span.NoPageNext{background:#fff url(images/page_nav.jpg) top right no-repeat;padding: 2px 7px 2px 7px;color:#ACA8AA;}

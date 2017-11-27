@@ -1,0 +1,151 @@
+/* CSS Document */
+body{font-family:Verdana,Arial; margin:0; padding:0; font-size:12px; color:#292929;}
+h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
+table{width:100%;border-collapse:collapse;}
+
+html, body{height:100%;}
+input,select,textarea{font-family:Verdana,Arial;font-size:12px; color:#0f0f0f}
+
+a {color:#0A53B6;text-decoration:none;}
+a:hover {color:#CC0000;text-decoration:underline;}
+
+/*颜色字体*/
+.black{color:#000;}
+.blackb{color:#000;font-weight:bold;}
+.red{color:red;}
+.redb{color:red;font-weight:bold;}
+.orange {color:#FF9900;}
+.orangeb{color:#FF9900;font-weight:bold;}
+.blue{color:blue;}
+.blueb{color:blue;font-weight:bold;}
+.green{color:#51B400;}
+.greenb{color:#51B400;font-weight:bold;}
+.grey{color:#AEABAA;}
+.greyb{color:#AEABAA;font-weight:bold;}
+.spec{color:#11F7EB;}
+
+/*客人窗口 start*/
+#guest {background:#E1E1E1;height:100%;width:100%;}
+#guest_top {background:url(images/header_bg2.gif) repeat-x;position:absolute;top:0px;left:0px;width:100%;height:32px;line-height:32px;overflow:hidden;}
+#guest_top .logo {float:left;display:inline;padding-left:50px;background:url(images/logo_s.gif) no-repeat 24px 6px;color:#FFF;font-weight:700;}
+#guest_top #guestinfo {float:left;padding-left:30px;color:#C3C3C3;*padding-top:2px;}
+#guest_top .timer_div {float:right;display:inline;padding:0 30px 0 22px;background:url(images/timer_bg.gif) no-repeat 0 8px;color:#C0BEBE;font-size:16px;font-weight:700;}
+
+/*留言窗口*/
+#guest .comment{color:#414141;position:absolute;padding:6px;top:40px;left:24px;line-height:20px;}
+.comment input.input-text{height:18px;padding:4px 0 4px 6px;border:1px solid #898787;background:#fff url(images/input_bg.png) repeat-x;line-height:16px}
+.comment textarea.content{height:200px;width:400px;padding:4px 0 0 6px;margin-bottom:8px;border:1px solid #898787;line-height:20px;}
+.comment img.vvc{border:1px solid #898787;cursor:pointer;}
+
+/*对话记录栏*/
+#guest .ico_history{position:absolute;width:20px;top:40px;padding-left:4px;}
+#guest #history{color:#414141;position:absolute;border:1px solid #717171;background: url(images/msg_bg.png);width:498px;height:334px;top:40px;left:24px;padding-top:6px;overflow:auto;overflow-x:hidden;}
+#guest #history img {vertical-align:middle;}
+#guest .guest_right{position:absolute;width:120px;height:340px;top:40px;left:532px;overflow:hidden;}
+#guest .user_title{color:#9C861B;background:url(images/guest_user_title.gif) no-repeat;font-weight:bold;height:26px;line-height:26px;padding-left:16px;white-space:nowrap;overflow:hidden;}
+#guest .user_middle{color:#9A9A9A;background:url(images/guest_user_middle.gif) repeat-y;padding:6px;line-height:18px;}
+#guest .user_bottom{background:url(images/guest_user_bottom.gif) no-repeat;height:5px;font-size:0;overflow:hidden;}
+#guest .adv{text-align:center;line-height:18px;margin-top:8px;}
+#history a {color:#717171;text-decoration:none;border-bottom:1px dashed #717171;}
+#history a:hover {color:#CC0000;text-decoration:none;border-bottom:1px dashed #CC0000;}
+
+.clear{clear:both;width:0;height:0;line-height:0;overflow:hidden;}
+
+.msg{position: relative;margin-bottom: 6px;}
+
+.msg.o{float: left;}
+.msg.g{float: right;}
+
+.msg .pip{position: absolute;bottom: 3px;width:13px;height: 15px;background-repeat: no-repeat;}
+.msg.o .pip{background-image: url(images/msg_pip_l.gif);left: 0;}
+.msg.g .pip{background-image: url(images/msg_pip_r.gif);right: 0;}
+.msg .ico{float:left;padding-top:0px;padding-right:6px;width:20px;height:20px;}
+.msg.i .ico{background: url(images/msg_pip_i.gif) no-repeat;}
+.msg.e .ico{background: url(images/msg_pip_e.gif) no-repeat;}
+
+.msg_b{
+	padding: 2px 5px 2px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow:  0 1px 1px #eff1f3, inset 0 0px 0px 1px #fff;
+	-moz-box-shadow:  0 1px 1px #eff1f3, inset 0 0px 0px 1px #fff;
+	box-shadow:  0 1px 1px #eff1f3, inset 0 0px 0px 1px #fff;
+}
+
+.msg.g .msg_b{text-align: right;float:right;margin-right: 11px;border: solid 1px #ccc;color: #666;display:inline;}
+.msg.o .msg_b{text-align: left;float:left;margin-left: 11px;border: solid 1px #bcd2ed;color: #03127a;display:inline;}
+.msg.i .msg_b{width:280px;margin:0 auto;text-align: left;border: solid 1px #a4f984;color: #218903;}
+.msg.e .msg_b{width:280px;margin:0 auto;text-align: left;border: solid 1px #f9d093;color: #ff3333;}
+
+.o_bg {background:#E7F0F8;}
+.g_bg{background:#F2F2F2;}
+.i_bg{background:#dffdd5;}
+.e_bg{background:#fdf2e1;}
+
+.msg_i{word-wrap: break-word;line-height:18px;}
+.msg.g .msg_i, .msg.o .msg_i{_width:expression(this.offsetWidth<25?"25px":this.offsetWidth>380?"380px":true);min-width: 25px;max-width: 380px;}
+.msg_t{color: #ccc;font-size: 10px;top: 0px;}
+.msg.g .msg_t{float: right;padding:6px 8px 0 0;}
+.msg.o .msg_t{float: left;padding:6px 0 0 8px;}
+
+/*工具栏*/
+#guest #guest_tools{position:absolute;width:468px;height:28px;line-height:28px;top:388px;left:24px;overflow:hidden;padding:0 16px;margin:0;}
+#guest .smilies_div{position:absolute;top:308px;width:360px;left:76px;height:60px;background:#FDF4D0;overflow:hidden;border:1px solid #DB9106;padding:6px}
+#guest .smilies_div img {padding:3px;cursor:pointer;}
+#guest .colors_div{position:absolute;top:308px;width:256px;left:112px;height:60px;background:#FDF4D0;overflow:hidden;border:1px solid #DB9106;padding:6px}
+#guest .color_squares{float:left;width:26px;height:26px;margin:0 4px 4px 0;border:1px solid #6C6C6C;cursor:pointer;}
+
+.tools_sound_on, .tools_sound_hover, .tools_sound_off,
+.tools_color_on, .tools_color_hover, .tools_color_off,
+.tools_smile_on, .tools_smile_hover, .tools_smile_off,
+.tools_bold_on, .tools_bold_hover, .tools_bold_off, 
+.tools_italic_on, .tools_italic_hover, .tools_italic_off, 
+.tools_underline_on, .tools_underline_hover, .tools_underline_off,
+.tools_reset_hover, .tools_reset_off
+{float:left;margin-left:8px;height:28px;width:28px;line-height:28px;background:url(images/tools.gif) no-repeat;cursor:pointer;}
+
+.tools_sound_on {margin-left:0;background-position:0px -28px;}
+.tools_sound_hover {margin-left:0;background-position:0px 0px;}
+.tools_sound_off {margin-left:0;background-position:0px -56px;}
+
+.tools_color_on {background-position:-28px -28px;}
+.tools_color_hover {background-position:-28px 0px;}
+.tools_color_off {background-position:-28px -56px;}
+
+.tools_smile_on {background-position:-56px -28px;}
+.tools_smile_hover {background-position:-56px 0px;}
+.tools_smile_off {margin-left:8px;background-position:-56px -56px;}
+
+.tools_bold_on {background-position:-84px -28px;}
+.tools_bold_hover {background-position:-84px 0px;}
+.tools_bold_off {background-position:-84px -56px;}
+
+.tools_italic_on {background-position:-112px -28px;}
+.tools_italic_hover {background-position:-112px 0px;}
+.tools_italic_off {background-position:-112px -56px;}
+
+.tools_underline_on {background-position:-140px -28px;}
+.tools_underline_hover {background-position:-140px 0px;}
+.tools_underline_off {background-position:-140px -56px;}
+
+.tools_reset_hover {margin-left:224px;background-position:-224px 0;}
+.tools_reset_off {margin-left:224px;background-position:-224px -56px;}
+
+/*发表信息栏*/
+#guest .ico_message{position:absolute;width:20px;top:420px;padding-left:4px;}
+#guest .message_div{position:absolute;border:1px solid #AB8104;background:#fff;width:486px;height:70px;top:420px;left:24px;padding:0 6px;overflow:hidden;}
+#guest .message{outline:none;resize:none;border:0;width:492px;height:70px;overflow:auto;overflow-x:hidden;padding:2px 0;margin:0;line-height:16px;}
+#guest .tools_send_div{position:absolute;width:120px;height:70px;top:420px;left:532px;overflow:hidden;}
+#guest .tools_send, #guest .tools_send_hover{color:#5F5F5F;font-size:18px;font-weight:700;text-align:center;background:url(images/guest_send.gif) no-repeat;height:70px;line-height:56px;white-space:nowrap;overflow:hidden;cursor:pointer;}
+#guest .tools_send_hover {color:#E37200;background-position:0px -70px;}
+
+/*底部*/
+#guest_bottom{background:url(images/footer_bg2.gif) repeat-x;position:absolute;bottom:0px;left:0px;width:100%;height:22px;overflow:hidden}
+#guest .sysinfo_div {float:left;padding:4px 20px 0 8px;}
+#guest .status_ok {color:green;}
+#guest .status_err {color:#FF3300;display:none;}
+#guest #loading{float:left;padding:7px 20px 0 0;display:none;}
+#guest .copyright {float:right;display:inline;padding:4px 8px 0 0;color:#E1E1E1;}
+#guest_bottom a {color:#11F7EB;text-decoration:underline;}
+/*客人窗口 end*/
